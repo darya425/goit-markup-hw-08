@@ -167,4 +167,49 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
+.method {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.method-items {
+  margin: 0;
+  padding: 0;
+}
+
+.method-items .item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.method-thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+}
+
+.method-subtitle {
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #212121;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.method-desc {
+  margin: 0;
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,40 @@
+.method {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.method-items {
+  margin: 0;
+  padding: 0;
+
+  .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.method-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 120px;
+  margin-bottom: 30px;
+  background: $accentBgColor;
+}
+
+.method-subtitle {
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+
+  color: $titleTextColor;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.method-desc {
+  margin: 0;
+}
