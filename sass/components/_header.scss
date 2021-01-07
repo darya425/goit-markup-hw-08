@@ -23,6 +23,18 @@
 
   .icon-cross {
     display: none;
+
+    &:hover,
+    &:focus {
+      fill: $accentColor;
+    }
+  }
+
+  .icon-menu {
+    &:hover,
+    &:focus {
+      fill: $accentColor;
+    }
   }
 
   &.is-open {
