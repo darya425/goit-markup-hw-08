@@ -24,13 +24,16 @@
   .icon-cross {
     display: none;
   }
-}
 
-.menu-button.is-open {
-  .icon-cross {
-    display: block;
+  &.is-open {
+    .icon-cross {
+      display: block;
+    }
   }
-  .icon-menu {
-    display: none;
+
+  &.is-open {
+    .icon-menu {
+      display: none;
+    }
   }
 }
