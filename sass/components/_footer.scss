@@ -1,0 +1,124 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background: $generalBg;
+}
+
+.infobox {
+  text-align: center;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+
+  color: $whiteColor;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-desc {
+  margin: 0;
+  margin-bottom: 9px;
+}
+
+.footer-add {
+  margin-bottom: 9px;
+}
+
+.address-link {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.common {
+  display: block;
+  margin: 0;
+  margin-bottom: 20px;
+  color: $whiteColor;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
+
+  .item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .item-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+
+    color: $whiteColor;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $accentColor;
+    }
+  }
+}
+
+.mailing {
+  .button {
+    display: inline-flex;
+    padding: 10px 28px;
+    align-items: center;
+    color: $whiteColor;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    background: $accentColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+
+.email {
+  width: 450px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: $generalBg;
+  color: $whiteColor;
+
+  &::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  }
+}
+
+.form-send {
+  margin-left: 10px;
+}
