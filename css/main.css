@@ -304,8 +304,8 @@ img {
   margin-right: auto;
   background: #2f303a;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/bg.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../img/hero-mobile.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -523,6 +523,12 @@ img {
 
 .team-items > .item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .team-img {
+    width: 450px;
+  }
 }
 
 .item-about {
