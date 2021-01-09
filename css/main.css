@@ -826,7 +826,6 @@ img {
 }
 
 .email {
-  width: 450px;
   margin-bottom: 20px;
   padding: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -865,6 +864,18 @@ img {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 767px) {
+  .email {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .email {
+    width: 100%;
+  }
 }
 
 .form-send {
