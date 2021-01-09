@@ -1,11 +1,24 @@
 .team {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
   background: $accentBgColor;
 
   .title {
-    margin-bottom: 30px;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $desctop) {
+      margin-bottom: 50px;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -25,9 +38,11 @@
 }
 
 .item-about {
-  padding: 30px 122px;
-
   text-align: center;
+
+  @media screen and (max-width: 767px) {
+    padding: 30px 122px;
+  }
 }
 
 .team-subtitle {

@@ -1,14 +1,23 @@
 .method {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .method-items {
   margin: 0;
   padding: 0;
 
-  .item:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    .item:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -25,7 +34,6 @@
 .method-subtitle {
   margin: 0;
   margin-bottom: 10px;
-  text-align: center;
 
   color: $titleTextColor;
   font-weight: 700;
@@ -33,6 +41,10 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .method-desc {

@@ -1,9 +1,6 @@
 .hero {
-  min-height: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 118px;
-  padding-bottom: 118px;
 
   background: $generalBg;
   text-align: center;
@@ -26,6 +23,19 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
   }
+
+  @media screen and (max-width: 1199px) {
+    min-height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    max-width: 1600px;
+    max-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero-title {
@@ -34,8 +44,16 @@
 
   color: $whiteColor;
   font-weight: 900;
-  font-size: 26px;
-  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+
+  @media screen and (min-width: $desctop) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
