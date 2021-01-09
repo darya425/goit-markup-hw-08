@@ -7,6 +7,10 @@ body {
   line-height: 1.72;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -743,6 +747,13 @@ img {
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 480px) {
+  .backdrop {
+    padding: 93px 15px 0 15px;
+  }
 }
 
 .backdrop.is-hidden {
@@ -751,26 +762,30 @@ img {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 450px;
-  height: 609px;
   padding: 40px;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-align: center;
   background-color: #ffffff;
   border-radius: 4px;
 }
 
-.backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(0);
-          transform: translate(-50%, -50%) scale(0);
+@media screen and (min-width: 481px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 609px;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .backdrop.is-hidden .modal {
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+  }
 }
 
 .modal-title {
@@ -796,8 +811,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: 8px;
-  right: 8px;
   width: 30px;
   height: 30px;
   background-color: #ffffff;
@@ -806,6 +819,20 @@ img {
   cursor: pointer;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 480px) {
+  .btn-modal {
+    top: 101px;
+    right: 23px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .btn-modal {
+    top: 8px;
+    right: 8px;
+  }
 }
 
 .btn-modal:hover, .btn-modal:focus {
