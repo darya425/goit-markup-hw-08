@@ -565,6 +565,18 @@ img {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .team-img {
+    width: 270px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .team-img {
+    width: 354px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .team-img {
     width: 450px;

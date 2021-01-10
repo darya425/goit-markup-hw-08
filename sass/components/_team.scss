@@ -38,6 +38,14 @@
 }
 
 .team-img {
+  @media screen and (min-width: $desctop) {
+    width: 270px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    width: 354px;
+  }
+
   @media screen and (max-width: 767px) {
     width: 450px;
   }
