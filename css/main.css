@@ -184,6 +184,36 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .wrapper-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 93px;
+  }
+}
+
 .site-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,6 +235,18 @@ img {
   }
   .site-nav .item:not(:last-child) {
     margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav .item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav .item:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
@@ -246,6 +288,15 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .site-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
 .auth-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -266,6 +317,30 @@ img {
   }
   .auth-nav .item:not(:last-child) {
     margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .auth-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .auth-nav .item:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
@@ -296,6 +371,15 @@ img {
   .auth-link {
     font-size: 18px;
     line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
