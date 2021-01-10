@@ -696,6 +696,12 @@ img {
   }
 }
 
+@media screen and (max-width: 1199px) and (max-width: 767px) {
+  .clients .item {
+    width: calc((100% - 2 * 30px) / 2);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .clients > .item:not(:last-child) {
     margin-right: 30px;
@@ -727,7 +733,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .client-link {
-    width: 210px;
+    max-width: 210px;
   }
 }
 

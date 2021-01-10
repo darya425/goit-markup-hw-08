@@ -32,6 +32,10 @@
 
     .item {
       margin: 15px;
+
+      @media screen and (max-width: 767px) {
+        width: calc((100% - 2 * 30px) / 2);
+      }
     }
   }
 
@@ -60,7 +64,7 @@
   }
 
   @media screen and (max-width: 767px) {
-    width: 210px;
+    max-width: 210px;
   }
 
   @media screen and (min-width: $desctop) {
