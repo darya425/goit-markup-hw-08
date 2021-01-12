@@ -36,12 +36,20 @@
       @media screen and (max-width: 767px) {
         width: calc((100% - 2 * 30px) / 2);
       }
+
+      @media screen and (min-width: $tablet) {
+        width: calc((100% - 3 * 30px) / 3);
+      }
     }
   }
 
   @media screen and (min-width: $desctop) {
-    > .item:not(:last-child) {
-      margin-right: 30px;
+    .item {
+      width: 170px;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
     }
   }
 }
@@ -63,13 +71,13 @@
     color: $accentColor;
   }
 
-  @media screen and (max-width: 767px) {
-    max-width: 210px;
-  }
+  // @media screen and (max-width: 767px) {
+  //   max-width: 210px;
+  // }
 
-  @media screen and (min-width: $desctop) {
-    width: 170px;
-  }
+  // @media screen and (min-width: $tablet) {
+  //   width: 226px;
+  // }
 }
 
 .icon-client {

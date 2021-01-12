@@ -32,8 +32,34 @@
     border-radius: 0px 0px 4px 4px;
   }
 
-  > .item:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    > .item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+
+    .item {
+      margin: 15px;
+      width: calc((100% - 2 * 30px) / 2);
+    }
+  }
+
+  @media screen and (min-width: $desctop) {
+    flex-wrap: nowrap;
+    margin: 0;
+
+    .item {
+      margin: 0;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
   }
 }
 
@@ -56,6 +82,10 @@
 
   @media screen and (max-width: 767px) {
     padding: 30px 122px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 30px 30px 30px 24px;
   }
 }
 

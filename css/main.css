@@ -189,6 +189,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -204,6 +205,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -514,6 +516,34 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .method-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+  .method-items .item {
+    margin: 15px;
+    width: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .method-items {
+    margin: 0;
+  }
+  .method-items .item {
+    width: 270px;
+    margin: 0%;
+  }
+  .method-items .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 .method-thumb {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -561,6 +591,12 @@ img {
 @media screen and (max-width: 1199px) {
   .works {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .works {
+    display: block;
   }
 }
 
@@ -645,8 +681,39 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-items > .item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .team-items > .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+  .team-items .item {
+    margin: 15px;
+    width: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-items {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 0;
+  }
+  .team-items .item {
+    margin: 0;
+  }
+  .team-items .item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -674,6 +741,12 @@ img {
 @media screen and (max-width: 767px) {
   .item-about {
     padding: 30px 122px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .item-about {
+    padding: 30px 30px 30px 24px;
   }
 }
 
@@ -786,8 +859,17 @@ img {
   }
 }
 
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .clients .item {
+    width: calc((100% - 3 * 30px) / 3);
+  }
+}
+
 @media screen and (min-width: 1200px) {
-  .clients > .item:not(:last-child) {
+  .clients .item {
+    width: 170px;
+  }
+  .clients .item:not(:last-child) {
     margin-right: 30px;
   }
 }
@@ -815,18 +897,6 @@ img {
   color: #2196f3;
 }
 
-@media screen and (max-width: 767px) {
-  .client-link {
-    max-width: 210px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .client-link {
-    width: 170px;
-  }
-}
-
 .icon-client {
   fill: currentColor;
 }
@@ -843,11 +913,23 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .infobox {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .infobox .wrapper:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .infobox {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -895,19 +977,6 @@ img {
   letter-spacing: 0.03em;
 }
 
-.common {
-  display: block;
-  margin: 0;
-  margin-bottom: 20px;
-  color: #ffffff;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -952,6 +1021,31 @@ img {
   }
 }
 
+.common {
+  display: block;
+  margin: 0;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .common {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .common {
+    text-align: start;
+  }
+}
+
 .mailing .button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -971,6 +1065,23 @@ img {
   border-color: transparent;
   border-radius: 4px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .mailing {
+    max-width: 450px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mailing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    text-align: start;
+  }
 }
 
 .email {
@@ -1014,7 +1125,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .email {
     width: 450px;
   }
@@ -1023,6 +1134,14 @@ img {
 @media screen and (max-width: 480px) {
   .email {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .email {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
   }
 }
 
@@ -1078,6 +1197,14 @@ img {
   .backdrop.is-hidden .modal {
     -webkit-transform: translate(-50%, -50%) scale(0);
             transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+    padding: 40px;
   }
 }
 
@@ -1250,11 +1377,31 @@ img {
   margin-bottom: 30px;
 }
 
-.license-text {
-  margin-left: 24px;
-  font-size: 12px;
-  line-height: 1.17;
-  text-align: left;
+@media screen and (min-width: 1200px) {
+  .license-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .license-text {
+    margin-left: 24px;
+    font-size: 12px;
+    line-height: 1.17;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .license-text {
+    margin-left: 36px;
+    font-size: 14px;
+  }
 }
 
 .license-text::before {
@@ -1269,6 +1416,13 @@ img {
   border-radius: 4px;
   -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .license-text::before {
+    top: 3px;
+    left: 13px;
+  }
 }
 
 .checkbox:checked + .license-text::before {
@@ -1405,6 +1559,7 @@ img {
 
 .card-thumb {
   position: relative;
+  z-index: -1;
   overflow: hidden;
 }
 

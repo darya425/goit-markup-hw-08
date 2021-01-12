@@ -79,6 +79,7 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     margin-left: 88px;
@@ -86,6 +87,7 @@
 
   @media screen and (min-width: $desctop) {
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     margin-left: 93px;
