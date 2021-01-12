@@ -23,20 +23,10 @@
   border: none;
   background-color: transparent;
 
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   .icon-cross {
     display: none;
-
-    &:hover,
-    &:focus {
-      fill: $accentColor;
-    }
-  }
-
-  .icon-menu {
-    &:hover,
-    &:focus {
-      fill: $accentColor;
-    }
   }
 
   &.is-open {
@@ -49,6 +39,11 @@
     .icon-menu {
       display: none;
     }
+  }
+
+  &:hover,
+  &:focus {
+    fill: $accentColor;
   }
 
   @media screen and (min-width: 768px) {
