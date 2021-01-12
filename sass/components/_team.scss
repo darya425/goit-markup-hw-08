@@ -87,6 +87,10 @@
   @media screen and (min-width: $tablet) {
     padding: 30px 30px 30px 24px;
   }
+
+  @media screen and (min-width: $desctop) {
+    padding: 30px 32px;
+  }
 }
 
 .team-subtitle {
