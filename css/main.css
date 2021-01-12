@@ -1169,15 +1169,15 @@ img {
   overflow-y: scroll;
 }
 
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 @media screen and (max-width: 480px) {
   .backdrop {
     padding: 93px 15px 0 15px;
   }
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
 }
 
 .modal {
@@ -1395,22 +1395,6 @@ img {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .license-text {
-    margin-left: 24px;
-    font-size: 12px;
-    line-height: 1.17;
-    text-align: left;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .license-text {
-    margin-left: 36px;
-    font-size: 14px;
-  }
-}
-
 .license-text::before {
   position: absolute;
   top: 4px;
@@ -1429,6 +1413,22 @@ img {
   .license-text::before {
     top: 3px;
     left: 13px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .license-text {
+    margin-left: 24px;
+    font-size: 12px;
+    line-height: 1.17;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .license-text {
+    margin-left: 36px;
+    font-size: 14px;
   }
 }
 

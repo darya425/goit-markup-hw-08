@@ -1,5 +1,5 @@
 .portfolio {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $max-tablet) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -46,7 +46,7 @@
     }
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $max-mobile) {
     flex-wrap: wrap;
     justify-content: start;
     margin-bottom: 40px;

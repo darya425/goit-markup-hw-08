@@ -6,7 +6,7 @@
 }
 
 .infobox {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $max-mobile) {
     text-align: center;
   }
 
@@ -41,7 +41,7 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $max-mobile) {
     margin-bottom: 60px;
   }
 }
@@ -91,7 +91,7 @@
     }
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $max-mobile) {
     justify-content: center;
     margin-bottom: 60px;
   }
@@ -165,7 +165,7 @@
     letter-spacing: 0.03em;
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $max-tablet) {
     width: 450px;
   }
 
