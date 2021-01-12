@@ -1574,6 +1574,9 @@ img {
     margin: 0 15px;
     width: calc((100% - 2 * 30px) / 2);
   }
+  .galery-items .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
