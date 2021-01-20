@@ -338,6 +338,9 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .auth-nav .item:not(:last-child) {
     margin-right: 50px;
@@ -738,7 +741,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .item-about {
-    padding: 30px 122px;
+    padding: 30px;
   }
 }
 
@@ -926,6 +929,7 @@ img {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    text-align: center;
   }
   .infobox .wrapper:not(:last-child) {
     margin-bottom: 60px;
@@ -1491,10 +1495,6 @@ img {
   padding: 0;
 }
 
-.button-items .item:not(:last-child) {
-  margin-right: 8px;
-}
-
 .button-items .btn {
   padding: 6px 22px;
   color: #212121;
@@ -1531,8 +1531,8 @@ img {
             justify-content: start;
     margin-bottom: 40px;
   }
-  .button-items .item:nth-child(-n + 3) {
-    margin-bottom: 15px;
+  .button-items .item {
+    margin: 4px;
   }
 }
 
@@ -1542,6 +1542,12 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .button-items .item:not(:last-child) {
+    margin-right: 8px;
   }
 }
 

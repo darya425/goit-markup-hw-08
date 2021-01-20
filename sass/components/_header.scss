@@ -186,6 +186,7 @@
 
   @media screen and (min-width: $desctop) {
     flex-direction: row;
+    align-items: center;
 
     .item:not(:last-child) {
       margin-right: 50px;
