@@ -961,6 +961,7 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    text-align: left;
   }
   .infobox .wrapper:not(:last-child) {
     margin-bottom: 0;
