@@ -1,5 +1,16 @@
 .header {
-  position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  @media screen and (max-width: $max-mobile) {
+    min-height: 60px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    min-height: 80px;
+  }
 }
 
 .border.header {
