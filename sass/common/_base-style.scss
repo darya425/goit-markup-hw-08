@@ -12,6 +12,14 @@ body {
   &.modal-open {
     overflow: hidden;
   }
+
+  @media screen and (max-width: $max-mobile) {
+    padding-top: 60px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 80px;
+  }
 }
 
 img {
